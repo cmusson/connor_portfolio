@@ -71,10 +71,10 @@ const projects: IProject[] = [
 const ProjectsSection = () => {
   return (
     <section className="mt-20 pt-20">
-      <h1 className="text-center font-bold text-4xl">
+      <h2 className="text-center font-bold text-4xl">
         Projects
         <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded" />
-      </h1>
+      </h2>
 
       <div className="flex flex-col space-y-28">
         {projects.map((project, i) => (
