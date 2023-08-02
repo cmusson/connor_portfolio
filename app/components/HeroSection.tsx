@@ -40,7 +40,7 @@ const HeroSection = () => {
       <div className="flex flex-row justify-center">
         <Link href={"#about"}>
           <Image
-            src="/public/down_arrow.svg"
+            src="/down_arrow.svg"
             alt="go to about section"
             className="animate-bounce dark:invert"
             width={35}
