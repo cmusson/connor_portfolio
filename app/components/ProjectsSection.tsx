@@ -52,7 +52,7 @@ const projects: IProject[] = [
     name: "Sticky Notes",
     description:
       "Create, edit, delete, drag and drop personalised notes, add images, draw on and clear the canvas as desired.",
-    techStack: "React, JavaScript, CSS",
+    techStack: "React, JavaScript, Canvas, CSS",
     image: "/sticky_notes_app.png",
     github: "https://github.com/cmusson/StickyNotes-CavasAPI-Project",
     link: "https://github.com/cmusson/StickyNotes-CavasAPI-Project",

@@ -27,9 +27,9 @@ const AboutSection = () => {
         </h2>
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:flex-row md:text-left md:p-4 md:space-y-0 md:space-x-10">
           <div className="md:w-1/2 ">
-            <h2 className="text-center text-2xl font-bold mb-6 md:text-left">
+            <h3 className="text-center text-2xl font-bold mb-6 md:text-left">
               Get to know me
-            </h2>
+            </h3>
             <p>
               <span className="font-semibold text-teal-600">
                 Software Engineer{" "}
@@ -65,9 +65,9 @@ const AboutSection = () => {
           </div>
 
           <div className="md:w-1/2 flex flex-col items-center md:items-start gap-2">
-            <h2 className="text-center text-2xl font-bold mb-6 md:text-left">
+            <h3 className="text-center text-2xl font-bold mb-6 md:text-left">
               My Skills
-            </h2>
+            </h3>
             <div className="flex flex-wrap flex-row justify-center md:justify-start">
               {skills.map((item) => (
                 <p
