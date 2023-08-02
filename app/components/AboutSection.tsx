@@ -80,7 +80,7 @@ const AboutSection = () => {
             </div>
             <Image
               src={"/cartoon_connor.jpeg"}
-              alt=""
+              alt="cartoon connor avatar"
               width={325}
               height={100}
             />
