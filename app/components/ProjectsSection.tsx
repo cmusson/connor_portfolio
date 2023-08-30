@@ -32,9 +32,9 @@ const projects: IProject[] = [
   },
   {
     name: "Personal Portfolio",
-    description: "This personal portfolio",
+    description: "This personal portfolio!",
     techStack: "Next.js, TypeScript, Tailwind",
-    image: "/cartoon_connor.png",
+    image: "/cartoon_connor.jpeg",
     github: "https://github.com/cmusson/connor_portfolio",
     link: "http://connormusson.vercel.app",
   },
