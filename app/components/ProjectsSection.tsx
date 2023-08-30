@@ -31,10 +31,18 @@ const projects: IProject[] = [
     link: "https://app.fluidity.money/",
   },
   {
+    name: "Personal Portfolio",
+    description: "This personal portfolio",
+    techStack: "Next.js, TypeScript, Tailwind",
+    image: "/cartoon_connor.png",
+    github: "https://github.com/cmusson/connor_portfolio",
+    link: "http://connormusson.vercel.app",
+  },
+  {
     name: "Eat the World",
     description:
       "A fullstack app from my earlier days of coding in React and JS detailing the different foods of the world. Where users can search and select or randomly generate any country, listing the country's national dishes.",
-    techStack: "React, JavaScript, Node.js, Express.js, CSS",
+    techStack: "React, JavaScript, Node.js, Express.js, CSS, d3.js",
     image: "/eat_the_world.png",
     github: "https://github.com/cmusson/Eat-the-World",
     link: "https://github.com/cmusson/Eat-the-World",
@@ -61,7 +69,7 @@ const projects: IProject[] = [
     name: "Defi Investment App",
     description:
       "A React Native DeFi investment app to estimate potential earnings in Compound protocol. To calculate the amount one could earn over time based on different distributions to different assets on Compound.",
-    techStack: "React Native, JavaScript",
+    techStack: "React Native, TypeScript, style sheets",
     image: "/defi_investment_mobile_app.png",
     github: "https://github.com/cmusson/DeFi-Investment-Mobile-App",
     link: "https://github.com/cmusson/DeFi-Investment-Mobile-App",
