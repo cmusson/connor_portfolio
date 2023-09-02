@@ -39,6 +39,17 @@ const projects: IProject[] = [
     link: "http://connormusson.vercel.app",
   },
   {
+    name: "My Places",
+    description:
+      "An app for people who believe the recommendation of a friend is more valuable than that of a stranger.",
+    techStack:
+      "React Native, Expo, TypeScript, Node.js, Express.js, PostgreSql, Redux",
+    image:
+      "https://github.com/alban44980/places-client/blob/main/readmeFiles/myplaces1.png",
+    github: "https://github.com/alban44980/places-client",
+    link: "https://github.com/alban44980/places-client",
+  },
+  {
     name: "Eat the World",
     description:
       "A fullstack app from my earlier days of coding in React and JS detailing the different foods of the world. Where users can search and select or randomly generate any country, listing the country's national dishes.",
@@ -65,11 +76,12 @@ const projects: IProject[] = [
     github: "https://github.com/cmusson/StickyNotes-CavasAPI-Project",
     link: "https://github.com/cmusson/StickyNotes-CavasAPI-Project",
   },
+
   {
     name: "Defi Investment App",
     description:
       "A React Native DeFi investment app to estimate potential earnings in Compound protocol. To calculate the amount one could earn over time based on different distributions to different assets on Compound.",
-    techStack: "React Native, TypeScript, style sheets",
+    techStack: "React Native, Expo, TypeScript, style sheets",
     image: "/defi_investment_mobile_app.png",
     github: "https://github.com/cmusson/DeFi-Investment-Mobile-App",
     link: "https://github.com/cmusson/DeFi-Investment-Mobile-App",
