@@ -7,7 +7,7 @@ interface IProject {
   techStack: string;
   image: string;
   github: string;
-  link: string;
+  link?: string;
 }
 
 const projects: IProject[] = [
@@ -46,7 +46,6 @@ const projects: IProject[] = [
       "React Native, Expo, TypeScript, Node.js, Express.js, PostgreSql, Redux",
     image: "/my_places.png",
     github: "https://github.com/alban44980/places-client",
-    link: "https://github.com/alban44980/places-client",
   },
   {
     name: "Eat the World",
@@ -55,7 +54,6 @@ const projects: IProject[] = [
     techStack: "React, JavaScript, Node.js, Express.js, CSS, d3.js",
     image: "/eat_the_world.png",
     github: "https://github.com/cmusson/Eat-the-World",
-    link: "https://github.com/cmusson/Eat-the-World",
   },
   {
     name: "Connect Four",
@@ -64,7 +62,6 @@ const projects: IProject[] = [
     techStack: "React, JavaScript, CSS",
     image: "/connect_four_app.png",
     github: "https://github.com/cmusson/Connect-4-Game-Lobby",
-    link: "https://github.com/cmusson/Connect-4-Game-Lobby",
   },
   {
     name: "Sticky Notes",
@@ -73,7 +70,6 @@ const projects: IProject[] = [
     techStack: "React, JavaScript, Canvas, CSS",
     image: "/sticky_notes_app.png",
     github: "https://github.com/cmusson/StickyNotes-CavasAPI-Project",
-    link: "https://github.com/cmusson/StickyNotes-CavasAPI-Project",
   },
 
   {
@@ -83,7 +79,6 @@ const projects: IProject[] = [
     techStack: "React Native, Expo, TypeScript, style sheets",
     image: "/defi_investment_mobile_app.png",
     github: "https://github.com/cmusson/DeFi-Investment-Mobile-App",
-    link: "https://github.com/cmusson/DeFi-Investment-Mobile-App",
   },
 ];
 

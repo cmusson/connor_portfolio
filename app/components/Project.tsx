@@ -9,7 +9,7 @@ interface IProject {
   techStack: string;
   image: string;
   github: string;
-  link: string;
+  link?: string;
 }
 
 const Project = ({ project }: { project: IProject }) => {
@@ -19,7 +19,7 @@ const Project = ({ project }: { project: IProject }) => {
     <SlideUp offset="-300px 0px -300px 0px">
       <div className="flex flex-col animate-slideUpCubiBezier animation-delay-by-2 md:flex-row md:items-center md:space-x-12">
         <div className="mt-8 md:w-1/2">
-          <Link href={link} target="_blank">
+          <Link href={link ? link : github} target="_blank">
             <Image
               src={image}
               alt={`${name} image`}
@@ -46,15 +46,19 @@ const Project = ({ project }: { project: IProject }) => {
                 className="hover:-translate-y-1 transition-transform cursor-pointer dark:invert"
               />
             </Link>
-            <Link href={link} target="_blank">
-              <Image
-                src="/arrow_right.svg"
-                alt={`to ${name} github repository`}
-                width={30}
-                height={30}
-                className="hover:-translate-y-1 transition-transform cursor-pointer dark:invert"
-              />
-            </Link>
+            {link ? (
+              <Link href={link} target="_blank">
+                <Image
+                  src="/arrow_right.svg"
+                  alt={`to ${name} github repository`}
+                  width={30}
+                  height={30}
+                  className="hover:-translate-y-1 transition-transform cursor-pointer dark:invert"
+                />
+              </Link>
+            ) : (
+              <></>
+            )}
           </div>
         </div>
       </div>
