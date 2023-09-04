@@ -44,8 +44,7 @@ const projects: IProject[] = [
       "An app for people who believe the recommendation of a friend is more valuable than that of a stranger.",
     techStack:
       "React Native, Expo, TypeScript, Node.js, Express.js, PostgreSql, Redux",
-    image:
-      "https://github.com/alban44980/places-client/blob/main/readmeFiles/myplaces1.png",
+    image: "/my_places.png",
     github: "https://github.com/alban44980/places-client",
     link: "https://github.com/alban44980/places-client",
   },
