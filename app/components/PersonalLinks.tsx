@@ -77,6 +77,6 @@ const linkData: ILinkData[] = [
     target: "_blank",
     onClick: () => {},
     src: "/resume.svg",
-    alt: "view cv/resume",
+    alt: "view cv/resume (coming soon)",
   },
 ];
