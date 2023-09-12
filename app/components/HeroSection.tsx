@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import PersonalLinks from "./PersonalLinks";
+import PdfViewer from "./PdfViewer";
 
 const HeroSection = () => {
   return (
@@ -48,6 +49,7 @@ const HeroSection = () => {
           />
         </Link>
       </div>
+      {/* <PdfViewer /> */}
     </section>
   );
 };
