@@ -35,7 +35,10 @@ const ResumeModal = ({ isOpen, handleClose }: IResumeModal) => {
         >
           <div className="flex flex-col items-end rounded box-border h-auto w-fit h-fit overflow-y-auto p-2 bg-zinc-800">
             <button
-              onClick={handleClose}
+              onClick={(e) => {
+                e.stopPropagation();
+                handleClose();
+              }}
               className="top-0 mb-1 text-center text-neutral-100 font-semibold px-2 bg-teal-600 rounded shadow hover:bg-teal-700"
             >
               X
