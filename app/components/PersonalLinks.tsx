@@ -60,7 +60,7 @@ const linkData: ILinkData[] = [
     href: "https://www.linkedin.com/in/connor-musson/",
     rel: "noreferrer",
     target: "_blank",
-    src: "/LinkedIn.svg",
+    src: "/linkedIn.svg",
     alt: "link to LinkedIn",
   },
   {
