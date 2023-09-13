@@ -25,13 +25,13 @@ const PdfViewer = () => {
         />
       </Document>
 
-      <Link
+      <a
         href="/cv_resume/Connor_Musson_CV_Resume.pdf"
-        download
+        download="cv/resume"
         className="whitespace-nowrap mt-1 text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
       >
         <button>Download cv/resume</button>
-      </Link>
+      </a>
     </div>
   );
 };
