@@ -21,7 +21,7 @@ const navItems: INavItem[] = [
 
 const Navbar = () => {
   return (
-    <header className="w-full mx-auto px-4 bg-white sm:px-20 fixed top-0 z-50 shadow opacity-95 dark:bg-dark dark:border-b dark:border-stone-600">
+    <header className="w-full mx-auto px-4 bg-white sm:px-20 fixed top-0 z-30 shadow opacity-95 dark:bg-dark dark:border-b dark:border-stone-600">
       <div className=" justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3">
