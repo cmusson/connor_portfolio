@@ -7,9 +7,14 @@ const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
-  // useEffect only runs on the client, so now we can safely show the UI
+  // useEffect only runs on the client to make sure correct theme is set
   useEffect(() => {
     setMounted(true);
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
+      .matches
+      ? "dark"
+      : "light";
+    setTheme(systemTheme);
   }, []);
 
   if (!mounted) {
@@ -21,7 +26,7 @@ const ThemeSwitcher = () => {
       {theme === "dark" ? (
         <button
           onClick={() => setTheme("light")}
-          className="bg-slate-100 p-2 rounded-xl text-black"
+          className="bg-slate-100 p-2 rounded-xl text-black hover:bg-gray-200"
         >
           <Image
             src="/moon.svg"
@@ -33,7 +38,7 @@ const ThemeSwitcher = () => {
       ) : (
         <button
           onClick={() => setTheme("dark")}
-          className="bg-slate-100 p-2 rounded-xl"
+          className="bg-slate-100 p-2 rounded-xl hover:bg-gray-200"
         >
           <Image
             src="/sun.svg"
