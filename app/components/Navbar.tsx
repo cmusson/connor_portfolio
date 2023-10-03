@@ -44,9 +44,10 @@ const Navbar = () => {
                 <Link
                   key={item.label}
                   href={`#${item.page}`}
-                  className="block lg:inline-block text-neutral-900 hover:text-neutral-500 dark:text-neutral-100"
+                  className="block lg:inline-block group text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 transition duration-300"
                 >
                   {item.label}
+                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-teal-600"></span>
                 </Link>
               ))}
               <ThemeSwitcher />
