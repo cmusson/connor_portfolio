@@ -9,11 +9,12 @@ const HeroSection = () => {
       <div className="flex flex-col items-center justify-center my-10 pt-12 ppb-6 md:flex-row md-space-x-4 md:text-left md:pt-32 md:pb-24">
         <div className="md:w-1/2 md:mt-2">
           <Image
-            className="rounded-full shadow-2xl"
+            className="rounded-full shadow-2xl h-auto w-auto"
             src="/profile_pic3.jpeg"
             alt="headshot"
             width={300}
             height={300}
+            priority={false}
           />
         </div>
         <div className="flex flex-col items-center justify-center md:mt-2 md:w-3/5 md:items-start">

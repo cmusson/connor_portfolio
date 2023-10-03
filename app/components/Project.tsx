@@ -26,7 +26,7 @@ const Project = ({ project }: { project: IProject }) => {
               width={1000}
               height={1000}
               style={{ objectFit: "contain" }}
-              className="rounded-xl shadow-xl hover:opacity-70"
+              className="rounded-xl shadow-xl hover:opacity-70 "
             />
           </Link>
         </div>

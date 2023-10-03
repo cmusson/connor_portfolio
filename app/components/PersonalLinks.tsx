@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useCallback, useState } from "react";
 import ResumeModal from "./Modals/ResumeModal";
+import personalLinkData from "../data/linkData.json";
 
 const emailAddress = "mussonconnor@gmail.com";
 const sendConnorEmail = () => {
@@ -21,44 +22,27 @@ interface ILinkData {
 
 const PersonalLinks = () => {
   const [resumeModalOpen, setResumeModal] = useState(false);
+
   const openCloseModal = useCallback(() => {
     setResumeModal((prevState) => !prevState);
   }, []);
 
-  const linkData: ILinkData[] = [
-    {
-      title: "open github",
-      href: "https://github.com/cmusson",
-      rel: "noreferrer",
-      target: "_blank",
-      src: "/github.svg",
-      alt: "link to github",
-    },
-    {
-      title: "open linkedin",
-      href: "https://www.linkedin.com/in/connor-musson/",
-      rel: "noreferrer",
-      target: "_blank",
-      src: "/linkedIn.svg",
-      alt: "link to LinkedIn",
-    },
-    {
-      title: "send email",
-      rel: "noreferrer",
-      target: "_blank",
-      onClick: sendConnorEmail,
-      src: "/email.svg",
-      alt: "send  email",
-    },
-    {
-      title: "view cv/resume",
-      rel: "noreferrer",
-      target: "_blank",
-      onClick: openCloseModal,
-      src: "/resume.svg",
-      alt: "view cv/resume (coming soon)",
-    },
-  ];
+  // assign function from json data
+  const linkData = personalLinkData.map((item) => {
+    if (item.onClick) {
+      return {
+        ...item,
+        onClick: () => {
+          if (item.onClick === "sendConnorEmail") {
+            sendConnorEmail();
+          } else if (item.onClick === "openCloseModal") {
+            openCloseModal();
+          }
+        },
+      };
+    }
+    return item as ILinkData;
+  });
 
   return (
     <div className="flex flex-row  items-center justify-center space-x-2 mb-1">

@@ -1,0 +1,34 @@
+[
+  {
+    "title": "open github",
+    "href": "https://github.com/cmusson",
+    "rel": "noreferrer",
+    "target": "_blank",
+    "src": "/github.svg",
+    "alt": "link to github"
+  },
+  {
+    "title": "open linkedin",
+    "href": "https://www.linkedin.com/in/connor-musson/",
+    "rel": "noreferrer",
+    "target": "_blank",
+    "src": "/linkedIn.svg",
+    "alt": "link to LinkedIn"
+  },
+  {
+    "title": "send email",
+    "rel": "noreferrer",
+    "target": "_blank",
+    "onClick": "sendConnorEmail",
+    "src": "/email.svg",
+    "alt": "send email"
+  },
+  {
+    "title": "view cv/resume",
+    "rel": "noreferrer",
+    "target": "_blank",
+    "onClick": "openCloseModal",
+    "src": "/resume.svg",
+    "alt": "view cv/resume (coming soon)"
+  }
+]
