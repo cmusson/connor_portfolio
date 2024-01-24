@@ -42,14 +42,15 @@
     "description": "A fullstack app from my earlier days of coding in React and JS detailing the different foods of the world. Where users can search and select or randomly generate any country, listing the country's national dishes.",
     "techStack": "React, JavaScript, Node.js, Express.js, CSS, d3.js",
     "image": "/eat_the_world.png",
-    "github": "https://github.com/cmusson/Eat-the-World"
+    "github": "https://github.com/cmusson/Eat-the-World",
+    "link": "https://connect-4-game-cmusson.vercel.app/"
   },
   {
     "name": "Connect Four",
     "description": "Connect 4 tokens to win the game! Two player. Current player and score tally listed either side. Refresh to reset the score",
     "techStack": "React, JavaScript, CSS",
     "image": "/connect_four_app.png",
-    "github": "https://github.com/cmusson/Connect-4-Game-Lobby"
+    "github": "https://github.com/cmusson/connect-4-game"
   },
   {
     "name": "Sticky Notes",
