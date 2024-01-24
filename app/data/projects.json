@@ -33,7 +33,7 @@
   {
     "name": "Light the Beacon",
     "description": "A fullstack social media notification native app currently in the early stages of development",
-    "techStack": "React-Native, TypeScript, TailwindCSS, GraphQL, Apollo, PostgreSQL",
+    "techStack": "React-Native, Expo, TypeScript, TailwindCSS, GraphQL, Apollo, PostgreSQL",
     "image": "/cartoon_connor.jpeg",
     "github": ""
   },
