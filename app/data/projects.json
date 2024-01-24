@@ -31,6 +31,13 @@
     "github": "https://github.com/alban44980/places-client"
   },
   {
+    "name": "Light the Beacon",
+    "description": "A fullstack social media notification native app currently in the early stages of development",
+    "techStack": "React-Native, TypeScript, TailwindCSS, GraphQL, Apollo, PostgreSQL",
+    "image": "/cartoon_connor.jpeg",
+    "github": ""
+  },
+  {
     "name": "Eat the World",
     "description": "A fullstack app from my earlier days of coding in React and JS detailing the different foods of the world. Where users can search and select or randomly generate any country, listing the country's national dishes.",
     "techStack": "React, JavaScript, Node.js, Express.js, CSS, d3.js",

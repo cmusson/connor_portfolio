@@ -1,5 +1,5 @@
 "use client";
-import React, { ReactNode, useLayoutEffect, useState } from "react";
+import { ReactNode, useLayoutEffect, useState } from "react";
 import { createPortal } from "react-dom";
 // create wrapper element and append it to the bottom of the body
 
