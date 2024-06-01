@@ -13,7 +13,7 @@ const PdfViewer = () => {
     <div className="flex flex-col items-center justify-center">
       <Document
         className="text-neutral-100"
-        file={"/cv_resume/Connor_Musson_CV_Resume.pdf"}
+        file={"/cv_resume/ConnorMusson_CVResume.pdf"}
         onLoadSuccess={() => {}}
       >
         <Page
@@ -26,7 +26,7 @@ const PdfViewer = () => {
       </Document>
 
       <a
-        href="/cv_resume/Connor_Musson_CV_Resume.pdf"
+        href="/cv_resume/ConnorMusson_CVResume.pdf"
         download="cv/resume"
         className="whitespace-nowrap mt-1 text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
       >
