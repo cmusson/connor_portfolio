@@ -26,7 +26,7 @@ const ThemeSwitcher = () => {
       {theme === "dark" ? (
         <button
           onClick={() => setTheme("light")}
-          className="bg-slate-100 p-2 rounded-xl text-black hover:bg-gray-200"
+          className="bg-slate-100 p-2 rounded-xl text-black hover:bg-gray-200 transition-colors ease-in-out duration-100"
         >
           <Image
             src="/moon.svg"

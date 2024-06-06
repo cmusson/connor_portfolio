@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "./Project";
+import { Project } from "../components";
 import projectsData from "../data/projects.json";
 
 interface IProject {

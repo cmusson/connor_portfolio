@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import PersonalLinks from "./PersonalLinks";
+import { PersonalLinks, PrimaryLink } from "../components";
 
 const HeroSection = () => {
   return (
@@ -28,12 +28,7 @@ const HeroSection = () => {
             the world around us.
           </p>
           <div className="flex items-center gap-2">
-            <Link
-              href={"#projects"}
-              className=" text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
-            >
-              Projects
-            </Link>
+            <PrimaryLink linkTo="#projects">Projects</PrimaryLink>
             <PersonalLinks />
           </div>
         </div>

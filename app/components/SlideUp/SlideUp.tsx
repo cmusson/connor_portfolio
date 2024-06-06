@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useRef, ReactNode } from "react";
+
 interface IUseClientProps {
   offset?: string;
   children?: ReactNode;
@@ -29,7 +30,7 @@ export default function SlideUp({ children, offset = "0px" }: IUseClientProps) {
     if (ref.current) {
       observer.observe(ref.current);
     }
-  }, [ref]);
+  }, [ref, offset]);
 
   return (
     <div ref={ref} className="relative opacity-0">

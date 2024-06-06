@@ -1,6 +1,5 @@
-import Image from "next/image";
 import React from "react";
-import PersonalLinks from "./PersonalLinks";
+import { PersonalLinks } from "../PersonalLinks";
 
 const Footer = () => {
   return (

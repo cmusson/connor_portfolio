@@ -1,21 +1,21 @@
 import React from "react";
-import Link from "next/link";
-import ThemeSwitcher from "./ThemeSwitcher";
+import { ThemeSwitcher } from "../Buttons";
+import { NavLink } from "../Links";
 
 interface INavItem {
   label: string;
-  page: string;
+  location: string;
 }
 
 const navItems: INavItem[] = [
-  { label: "Home", page: "home" },
+  { label: "Home", location: "home" },
   {
     label: "About",
-    page: "about",
+    location: "about",
   },
   {
     label: "Projects",
-    page: "projects",
+    location: "projects",
   },
 ];
 
@@ -39,17 +39,15 @@ const Navbar = () => {
              
             `}
           >
-            <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 ">
-              {navItems.map((item) => (
-                <Link
-                  key={item.label}
-                  href={`#${item.page}`}
-                  className="block lg:inline-block group text-neutral-900 hover:text-neutral-500 dark:text-neutral-100 transition duration-300"
-                >
-                  {item.label}
-                  <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-teal-600"></span>
-                </Link>
-              ))}
+            <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+                {navItems.map((item) => (
+                  <li key={item.label}>
+                    <NavLink location={item.location}>{item.label}</NavLink>
+                  </li>
+                ))}
+              </ul>
+
               <ThemeSwitcher />
             </div>
           </div>

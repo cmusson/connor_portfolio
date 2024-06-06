@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import PdfViewer from "../PdfViewer";
+import PdfViewer from "../PdfViewer/PdfViewer";
 import ReactPortal from "./ReactPortal";
 
 interface IResumeModal {

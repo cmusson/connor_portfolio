@@ -1,5 +1,5 @@
 import React from "react";
-import SlideUp from "./SlideUp";
+import { SlideUp } from "../SlideUp";
 import Link from "next/link";
 import Image from "next/image";
 

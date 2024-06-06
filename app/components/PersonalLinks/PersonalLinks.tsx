@@ -1,8 +1,8 @@
 "use client";
-import Image from "next/image";
 import React, { useCallback, useState } from "react";
-import ResumeModal from "./Modals/ResumeModal";
-import personalLinkData from "../data/linkData.json";
+import { ResumeModal } from "../Modal";
+import personalLinkData from "../../data/linkData.json";
+import { PersonalLink } from "../Links";
 
 const emailAddress = "mussonconnor@gmail.com";
 const sendConnorEmail = () => {
@@ -15,7 +15,7 @@ interface ILinkData {
   href?: string;
   rel?: string;
   target?: string;
-  onClick?: () => void;
+  onClick?: string;
   src: string;
   alt: string;
 }
@@ -24,46 +24,30 @@ const PersonalLinks = () => {
   const [resumeModalOpen, setResumeModal] = useState(false);
 
   const openCloseModal = useCallback(() => {
+    console.log("fired");
     setResumeModal((prevState) => !prevState);
   }, []);
 
-  // assign function from json data
   const linkData = personalLinkData.map((item) => {
-    if (item.onClick) {
-      return {
-        ...item,
-        onClick: () => {
-          if (item.onClick === "sendConnorEmail") {
-            sendConnorEmail();
-          } else if (item.onClick === "openCloseModal") {
-            openCloseModal();
-          }
-        },
-      };
-    }
     return item as ILinkData;
   });
+
+  const handleClick = (onClick: string | undefined) => {
+    if (onClick === "sendConnorEmail") {
+      return sendConnorEmail;
+    } else if (onClick === "openCloseModal") {
+      return openCloseModal;
+    } else return;
+  };
 
   return (
     <div className="flex flex-row  items-center justify-center space-x-2 mb-1">
       {linkData.map((link, i) => (
-        <a
-          key={`${i}-${link.alt}`}
-          href={link.href}
-          rel={link.rel}
-          target={link.target}
-          className="hover:translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-500"
-        >
-          <Image
-            title={link.title}
-            src={link.src}
-            alt={link.alt}
-            onClick={link.onClick}
-            width={30}
-            height={30}
-            className="dark:invert"
-          />
-        </a>
+        <PersonalLink
+          key={i}
+          link={link}
+          handleClick={handleClick(link.onClick)}
+        />
       ))}
       {resumeModalOpen ? (
         <ResumeModal
