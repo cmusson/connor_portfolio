@@ -1,7 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
-import { PersonalLinks, PrimaryLink } from "../components";
+import { ArrowLink, PersonalLinks, PrimaryLink } from "../components";
 
 const HeroSection = () => {
   return (
@@ -18,11 +17,11 @@ const HeroSection = () => {
           />
         </div>
         <div className="flex flex-col items-center justify-center md:mt-2 md:w-3/5 md:items-start">
-          <h1 className="text-center  text-4xl font-bold mt-6 md:text-start md:mt-0 md:text-4xl">{`Hello there, I'm Connor!`}</h1>
+          <h1 className="text-center text-4xl font-semibold mt-6 md:text-start md:mt-0 md:text-4xl">{`Hello there, I'm Connor!`}</h1>
           <p className="text-center text-lg mt-4 mb-6 md:text-2xl md:text-start">
             I&#39;m a{" "}
-            <span className="font-semibold text-teal-600">
-              Software Engineer{" "}
+            <span className="font-semibold text-teal-700">
+              Software Engineer
             </span>{" "}
             based in the US/UK, working towards creating software that improves
             the world around us.
@@ -34,15 +33,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="flex flex-row justify-center">
-        <Link href={"#about"}>
-          <Image
-            src="/down_arrow.svg"
-            alt="go to about section"
-            className="animate-bounce dark:invert"
-            width={35}
-            height={35}
-          />
-        </Link>
+        <ArrowLink href="#about" />
       </div>
     </section>
   );

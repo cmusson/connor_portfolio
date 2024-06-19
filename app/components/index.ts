@@ -7,3 +7,4 @@ export * from "./PdfViewer";
 export * from "./PersonalLinks";
 export * from "./Project";
 export * from "./SlideUp";
+export * from "./skill";

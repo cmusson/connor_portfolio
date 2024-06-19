@@ -12,7 +12,7 @@ const PrimaryLink = ({ linkTo, children }: IPrimaryLinkProps) => {
   return (
     <Link
       href={linkTo}
-      className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700 transition-colors ease-in-out duration-100"
+      className="text-neutral-100 font-semibold px-6 py-3 bg-teal-700 rounded shadow hover:bg-teal-800 transition-colors ease-in-out duration-100"
     >
       {children}
     </Link>

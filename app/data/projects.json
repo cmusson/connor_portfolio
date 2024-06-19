@@ -19,7 +19,7 @@
     "name": "Personal Portfolio",
     "description": "This personal portfolio!",
     "techStack": "Next.js, TypeScript, Tailwind",
-    "image": "/cartoon_connor.jpeg",
+    "image": "/cartoon_connor_rect.png",
     "github": "https://github.com/cmusson/connor_portfolio",
     "link": "http://connormusson.vercel.app"
   },
@@ -34,7 +34,7 @@
     "name": "Light the Beacon",
     "description": "A fullstack social media notification native app currently in the early stages of development",
     "techStack": "React-Native, Expo, TypeScript, TailwindCSS, GraphQL, Apollo, PostgreSQL",
-    "image": "/cartoon_connor.jpeg",
+    "image": "/cartoon_connor_rect.png",
     "github": ""
   },
   {

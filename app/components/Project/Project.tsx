@@ -35,7 +35,7 @@ const Project = ({ project }: { project: IProject }) => {
           <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
             {description}
           </p>
-          <h4 className="font-semibold text-teal-600 mb-1">{techStack}</h4>
+          <h4 className="font-semibold text-teal-700 mb-1">{techStack}</h4>
           <div className="flex flex-row align-bottom space-x-4">
             <Link href={github} target="_blank">
               <Image

@@ -27,7 +27,7 @@ const PdfViewer = () => {
       <a
         href="/cv_resume/ConnorMusson_CVResume.pdf"
         download="cv/resume"
-        className="whitespace-nowrap mt-1 text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
+        className="whitespace-nowrap mt-1 text-neutral-100 font-semibold px-6 py-3 bg-teal-700 rounded shadow hover:bg-teal-800"
       >
         <button>Download cv/resume</button>
       </a>

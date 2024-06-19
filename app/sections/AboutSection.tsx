@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Skill } from "../components";
 
 const skills = [
   { skill: "HTML" },
@@ -31,7 +32,7 @@ const AboutSection = () => {
               Get to know me
             </h3>
             <p>
-              <span className="font-semibold text-teal-600">
+              <span className="font-semibold text-teal-700">
                 Software Engineer{" "}
               </span>{" "}
               based in the US, working towards creating software that improves
@@ -70,12 +71,7 @@ const AboutSection = () => {
             </h3>
             <div className="flex flex-wrap flex-row justify-center md:justify-start">
               {skills.map((item) => (
-                <p
-                  key={item.skill}
-                  className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
-                >
-                  {item.skill}
-                </p>
+                <Skill key={item.skill} skill={item.skill} />
               ))}
             </div>
             <Image
