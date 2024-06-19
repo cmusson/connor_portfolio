@@ -18,7 +18,17 @@ const ThemeSwitcher = () => {
   }, []);
 
   if (!mounted) {
-    return null;
+    return (
+      <div className="bg-slate-100 p-2 rounded-xl text-black hover:bg-gray-200 transition-colors ease-in-out duration-100">
+        <Image
+          src="/sun.svg"
+          alt="switch to light mode"
+          width={30}
+          height={30}
+          priority={true}
+        />
+      </div>
+    );
   }
 
   return (
@@ -33,6 +43,7 @@ const ThemeSwitcher = () => {
             alt="switch to light mode"
             width={30}
             height={30}
+            priority={true}
           />
         </button>
       ) : (
@@ -45,6 +56,7 @@ const ThemeSwitcher = () => {
             alt="switch to dark mode"
             width={30}
             height={30}
+            priority={true}
           />
         </button>
       )}
