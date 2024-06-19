@@ -1,8 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
+import { Footer, Navbar } from "./components";
 import Providers from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -10,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Connor Musson",
   description:
-    "Connor Musson Personal Portfolio - A Next.js 13 application displaying information on myself and projects I have worked on and ways to contact me",
+    "Connor Musson Personal Portfolio - A Next.js application displaying information on myself and projects I have worked on and ways to contact me",
 };
 
 export default function RootLayout({
