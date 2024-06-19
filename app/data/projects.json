@@ -17,7 +17,7 @@
   },
   {
     "name": "Personal Portfolio",
-    "description": "This personal portfolio!",
+    "description": "This personal portfolio! With a perfect lighthouse score of 100 for Performance, Accessibility, Best Practices and SEO",
     "techStack": "Next.js, TypeScript, Tailwind",
     "image": "/cartoon_connor_rect.png",
     "github": "https://github.com/cmusson/connor_portfolio",
