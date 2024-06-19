@@ -13,7 +13,7 @@ const HeroSection = () => {
             alt="headshot"
             width={300}
             height={300}
-            priority={false}
+            priority={true}
           />
         </div>
         <div className="flex flex-col items-center justify-center md:mt-2 md:w-3/5 md:items-start">

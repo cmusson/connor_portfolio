@@ -19,14 +19,18 @@ const Project = ({ project }: { project: IProject }) => {
     <SlideUp offset="-300px 0px -300px 0px">
       <div className="flex flex-col animate-slideUpCubiBezier animation-delay-by-2 md:flex-row md:items-center md:space-x-12">
         <div className="mt-8 md:w-1/2">
-          <Link href={link ? link : github} target="_blank">
+          <Link
+            className="relative"
+            href={link ? link : github}
+            target="_blank"
+          >
             <Image
               src={image}
               alt={`${name} image`}
               width={1000}
               height={1000}
               style={{ objectFit: "contain" }}
-              className="rounded-xl shadow-xl hover:opacity-70 "
+              className="rounded-xl shadow-xl hover:opacity-70"
             />
           </Link>
         </div>
