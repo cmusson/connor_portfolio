@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import skillsData from "../data/skills.json";
-import { Skill } from "../components";
+import { Skill } from "../components/Skill";
 
 const skills = skillsData;
 
