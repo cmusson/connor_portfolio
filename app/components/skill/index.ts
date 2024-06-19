@@ -1,3 +1,3 @@
-import Skill from "./skill";
+import Skill from "./Skill";
 
 export { Skill };
