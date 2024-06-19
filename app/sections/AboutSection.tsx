@@ -1,22 +1,9 @@
 import Image from "next/image";
 import React from "react";
+import skillsData from "../data/skills.json";
 import { Skill } from "../components";
 
-const skills = [
-  { skill: "HTML" },
-  { skill: "CSS/SCSS" },
-  { skill: "Tailwind CSS" },
-  { skill: "JavaScript" },
-  { skill: "TypeScript" },
-  { skill: "React" },
-  { skill: "React Native" },
-  { skill: "Next.js" },
-  { skill: "Redux/Toolkit" },
-  { skill: "Storybook" },
-  { skill: "Node.js" },
-  { skill: "Express" },
-  { skill: "Git" },
-];
+const skills = skillsData;
 
 const AboutSection = () => {
   return (
