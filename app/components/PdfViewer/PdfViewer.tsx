@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Document, Page, pdfjs } from "react-pdf";
+import { DownloadLink } from "../Links";
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   "pdfjs-dist/build/pdf.worker.min.js",
@@ -8,8 +9,11 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 const PdfViewer = () => {
+  const fileName = "ConnorMusson_CVResume";
+  const fileUrl = "/cv_resume/ConnorMusson_CVResume.pdf";
+
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-end min-h-[560px]">
       <Document
         className="text-neutral-100"
         file={"/cv_resume/ConnorMusson_CVResume.pdf"}
@@ -24,13 +28,9 @@ const PdfViewer = () => {
         />
       </Document>
 
-      <a
-        href="/cv_resume/ConnorMusson_CVResume.pdf"
-        download="cv/resume"
-        className="whitespace-nowrap mt-1 text-neutral-100 font-semibold px-6 py-3 bg-teal-700 rounded shadow hover:bg-teal-800"
-      >
-        <button>Download cv/resume</button>
-      </a>
+      <DownloadLink fileName={fileName} fileUrl={fileUrl}>
+        Download CV/Resume
+      </DownloadLink>
     </div>
   );
 };
