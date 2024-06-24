@@ -2,6 +2,7 @@ import React from "react";
 import { SlideUp } from "../SlideUp";
 import Link from "next/link";
 import Image from "next/image";
+import { ProjectLinks } from "../Links";
 
 interface IProject {
   name: string;
@@ -29,6 +30,8 @@ const Project = ({ project }: { project: IProject }) => {
               alt={`${name} image`}
               width={1000}
               height={1000}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              layout="responsive"
               style={{ objectFit: "contain" }}
               className="rounded-xl shadow-xl hover:opacity-70"
             />
@@ -40,30 +43,7 @@ const Project = ({ project }: { project: IProject }) => {
             {description}
           </p>
           <p className="font-semibold text-teal-700 mb-1">{techStack}</p>
-          <div className="flex flex-row align-bottom space-x-4">
-            <Link href={github} target="_blank">
-              <Image
-                src="/github.svg"
-                alt={`to ${name} github repository`}
-                width={30}
-                height={30}
-                className="hover:-translate-y-1 transition-transform cursor-pointer dark:invert"
-              />
-            </Link>
-            {link ? (
-              <Link href={link} target="_blank">
-                <Image
-                  src="/arrow_right.svg"
-                  alt={`to ${name} github repository`}
-                  width={30}
-                  height={30}
-                  className="hover:-translate-y-1 transition-transform cursor-pointer dark:invert"
-                />
-              </Link>
-            ) : (
-              <></>
-            )}
-          </div>
+          <ProjectLinks name={name} github={github} link={link} />
         </div>
       </div>
     </SlideUp>
