@@ -46,7 +46,7 @@ const AboutSection = () => {
             <p>
               I love to travel and be social and explore new cultures, having
               traveled solo round SE Asia for a year, lived in a self-built a
-              van in Europe for 3 months, travelled vietnam on a motorbike for 6
+              van in Europe for 3 months, travelled Vietnam on a motorbike for 6
               weeks and worked remotely as a Digital Nomad. One of my favorite
               aspects of travel is the food, both eating and cooking new things.{" "}
             </p>
