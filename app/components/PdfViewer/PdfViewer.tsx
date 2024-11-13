@@ -10,13 +10,13 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 const PdfViewer = () => {
   const fileName = "ConnorMusson_CVResume";
-  const fileUrl = "/cv_resume/ConnorMusson_CVResume.pdf";
+  const fileUrl = "/cv_resume/Connor-Musson-CV-Resume.pdf";
 
   return (
     <div className="flex flex-col items-center justify-end min-h-[560px]">
       <Document
         className="text-neutral-100"
-        file={"/cv_resume/ConnorMusson_CVResume.pdf"}
+        file={"/cv_resume/Connor-Musson-CV-Resume.pdf"}
         onLoadSuccess={() => {}}
       >
         <Page
