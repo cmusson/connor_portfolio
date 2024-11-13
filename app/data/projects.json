@@ -1,7 +1,7 @@
 [
   {
     "name": "Fluidity Website",
-    "description": "Live website showcasing Fluidity and all they have to offer",
+    "description": "Live website showcasing Fluidity and all they have to offer.",
     "techStack": "Next.js, TypeScript, Storybook, SCSS",
     "image": "/fluidity_website.png",
     "github": "https://github.com/fluidity-money/fluidity-app/tree/develop/web/fluidity.money",
@@ -9,20 +9,34 @@
   },
   {
     "name": "Fluidity App",
-    "description": "Live app currently in use for swapping and sending Fluid tokens",
-    "techStack": "Remix, TypeScript, Storybook, SCSS",
+    "description": "Live app currently in use for swapping and sending Fluid tokens.",
+    "techStack": "Remix, TypeScript, Storybook, CSS",
     "image": "/fluidity_app.png",
     "github": "https://github.com/fluidity-money/fluidity-app/tree/develop/web/app.fluidity.money",
     "link": "https://app.fluidity.money/"
   },
   {
     "name": "Personal Portfolio",
-    "description": "This personal portfolio! With a perfect lighthouse score of 100 for Performance, Accessibility, Best Practices and SEO",
+    "description": "This personal portfolio! With a perfect lighthouse score of 100 for Performance, Accessibility, Best Practices and SEO.",
     "techStack": "Next.js, TypeScript, Tailwind",
     "image": "/cartoon_connor_rect.png",
     "github": "https://github.com/cmusson/connor_portfolio",
-    "link": "http://connormusson.vercel.app"
+    "link": "https://connormusson.vercel.app"
   },
+  {
+    "name": "Nexusflow AI",
+    "description": "Nexusﬂow Solution enables GenAI agents that surpass GPT-4 in your workﬂow. Built as a project for Cratebind. NDA prevents sharing images of product.",
+    "techStack": "Next.js, TypeScript, Tailwind, Redux",
+    "image": "/nexusflow_ai.png",
+    "github": "https://github.com/cratebind/nexus-flow", 
+    "link":"https://nexusflow.ai"
+  },
+    {
+      "name": "Spire App Simulator",
+    "description": "An app simulator to display functionality to potential clients. Built as a project for Cratebind.",
+    "techStack": "React Native, Expo, TypeScript, Redux, Async-local-storage",
+    "image": "/spire_app_sim.png",
+    "github": "https://github.com/cratebind/spire-appsim"},
   {
     "name": "My Places",
     "description": "An app for people who believe the recommendation of a friend is more valuable than that of a stranger.",
@@ -32,7 +46,7 @@
   },
   {
     "name": "Light the Beacon",
-    "description": "A fullstack social media notification native app currently in the early stages of development",
+    "description": "A fullstack social media notification native app currently in the early stages of development.",
     "techStack": "React-Native, Expo, TypeScript, TailwindCSS, GraphQL, Apollo, PostgreSQL",
     "image": "/cartoon_connor_rect.png",
     "github": ""
